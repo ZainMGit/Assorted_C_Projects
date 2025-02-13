@@ -53,22 +53,19 @@ int main() {
   char userInput; 
   char computer;
 
-
-
-
   int i = 0;
 
   while (i == 0) {
     printf("Enter Input ('r', 'p', or 's'): ");
     scanf(" %c", &userInput);
 
-    if (userInput != 'r' && userInput != 'p' && userInput != 's') {
+    while (userInput != 'r' && userInput != 'p' && userInput != 's') {
       printf("Invalid Input\n");
       printf("Enter Input ('r', 'p', or 's'): ");
       scanf(" %c", &userInput);
     }
 
-    
+
     srand(time(NULL));
     int random = rand();
   
@@ -86,12 +83,6 @@ int main() {
 
     i = game(userInput, computer);
   }
-  
- 
-
-
-
-
 
   return 0;
 }
