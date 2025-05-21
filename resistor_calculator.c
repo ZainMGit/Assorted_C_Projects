@@ -2,7 +2,6 @@
 #include <string.h>
 #include <ctype.h>
 
-// Convert string to lowercase
 
 // Color to digit (Band 1 & 2)
 int colorValue(char *color) {
